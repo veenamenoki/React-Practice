@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Divider } from 'antd';
+import  Forms  from './Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <h4 style={{textAlign:'center'}}>Simulate the use of an electric vehicle charging station</h4>
+    <Divider />
+    <br />    
+    <br />    
+    <br /> 
+    <Forms />   
+    <br />    
+    <br />    
+    <br />
+   
+  </div>
+);
+
 
 export default App;
