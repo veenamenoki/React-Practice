@@ -25,26 +25,6 @@ const Forms = () => {
   const [form] = Form.useForm();
   const format = 'HH:mm';
   const { Text} = Typography;
-  // const onMakeChange = (value) => {
-  //   switch (value) {
-  //     case 'make1':
-  //       form.setFieldsValue({
-  //         carModel: 'Car Model for Make 1!',
-  //       });
-  //       return;
-
-  //     case 'make2':
-  //       form.setFieldsValue({
-  //         carModel: 'Car Model for Make 2!',
-  //       });
-  //       return;
-
-  //     case 'make3':
-  //       form.setFieldsValue({
-  //         carModel: 'Car Model for Make 3!',
-  //       });
-  //   }
-  // };
 
   const onFinish = (values) => {
     console.log(values);
@@ -53,14 +33,6 @@ const Forms = () => {
   const onReset = () => {
     form.resetFields();
   };
-
-  const onFill = () => {
-    form.setFieldsValue({
-      carModel: 'Hello world!',
-      gender: 'male',
-    });
-  };
-  
   
   return (
     <div>
@@ -200,10 +172,6 @@ const Forms = () => {
         <Button style={{ backgroundColor: "#e07800",color:'white' }} appearance="primary" htmlType="submit">
           Preview
         </Button>
-        
-        {/* <Button type="link" htmlType="button" onClick={onFill}>
-          Fill form
-        </Button> */}
       </Form.Item>
       
     </Form>
